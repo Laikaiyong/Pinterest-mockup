@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A pinterest mockup for static web dev workshop">
+    <meta name="keywords" content="Pinterest, Mock up, Clone">
+    <meta name="author" content="Vandyck Lai Kai Yong">
+    <title>Pinterest Mockup</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/91/PNG/512/pinterest_16445.png">
+
+    <!-- OG Meta -->
+     <!--OG-->
+     <meta property="og:title" content="Linktree | Vandyck Lai Kai Yong" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://vandycklai.github.io" />
+     <meta property="og:image" content="/img/Vandyck Linktree OG.png" />
+     <meta property="og:description" content="A linktree coded by Vandyck Lai Kai Yong and web hosted by Github." />
+     <!--Twitter OG-->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="Linktree | Vandyck Lai Kai Yong" />
+     <meta name="twitter:description" content="A linktree coded by Vandyck Lai Kai Yong and web hosted by Github." />
+     <meta name="twitter:image" content="/img/Vandyck Linktree OG.png" />
+
+    <!-- CDN API -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" 
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" 
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+
+    <!-- JS -->
+    <script src="./static/js/images.js"></script>
+    <script src="./static/js/script.js"></script>
+
+
+</head>
+<body>
+    <h1 class="centered-title">Pinterest Mockup</h1>
+    <div class="gallery"></div>
+
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDLcyPGkrbTDo3YqYnYh8b5lvt7Oh0LsPE",
+          authDomain: "pinterest-7bc52.firebaseapp.com",
+          projectId: "pinterest-7bc52",
+          storageBucket: "pinterest-7bc52.appspot.com",
+          messagingSenderId: "247571506588",
+          appId: "1:247571506588:web:cee1671df3399dec19d459",
+          measurementId: "G-0LEVFQ464P"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
